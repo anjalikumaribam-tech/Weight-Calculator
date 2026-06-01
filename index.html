@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tola — Weight Price Calculator</title>
+<title>Weight Price Calculator</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -397,16 +397,16 @@
 
   <div class="header">
     <div class="logo-pill"><span class="logo-dot"></span> Smart Calculator</div>
-    <h1>Weight &amp; Price<br><span>Calculator</span></h1>
-    <p class="subtitle">Wajan dalein → Raqam nikalo</p>
+    
+    
   </div>
 
   <div class="tab-bar">
-    <button class="tab active" id="tab-total" onclick="switchTab('total')">⚖ Total Raqam</button>
-    <button class="tab" id="tab-price" onclick="switchTab('price')">₹ Rate Nikalo</button>
+    <button class="tab active" id="tab-total" onclick="switchTab('total')">⚖ By Price</button>
+    <button class="tab" id="tab-price" onclick="switchTab('price')">₹ By Rate</button>
   </div>
 
-  <!-- Panel: Total Raqam -->
+  <!-- Panel: Total Rupess -->
   <div id="panel-total">
     <div class="card">
       <div class="card-label">Rate per Kilogram</div>
@@ -415,7 +415,7 @@
           <label>Price (₹ per kg)</label>
           <div class="input-wrap">
             <span class="currency-symbol">₹</span>
-            <input type="number" id="t-rate" placeholder="120" min="0" oninput="calcTotal()">
+            <input type="number" id="t-rate" placeholder="150" min="0" oninput="calcTotal()">
             <span class="unit-badge">/kg</span>
           </div>
         </div>
@@ -423,7 +423,7 @@
     </div>
 
     <div class="card">
-      <div class="card-label">Wajan Darj Karein</div>
+      <div class="card-label">Weight</div>
       <div class="field-grid">
         <div class="weight-grid">
           <div class="field">
@@ -448,7 +448,7 @@
 
     <div class="result-card">
       <div class="result-top">
-        <span class="result-label-text">Kul Raqam</span>
+        <span class="result-label-text">Total Rupees</span>
         <span class="result-tag" id="t-tag">—</span>
       </div>
       <div class="result-amount" id="t-result">—</div>
